@@ -18,6 +18,10 @@
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
   <style>
     
+body {
+  overflow-x: hidden;
+}
+
 #mainNav {
   min-height: 56px;
   background-color: #fff;
@@ -128,8 +132,8 @@
 
 .masthead h1 {
   font-family: 'Roboto';
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 2em;
+  line-height: 1em;
   letter-spacing: 0.8rem;
   color: white;
 }
@@ -139,21 +143,12 @@
   font-size: 1rem;
 }
 
-@media (min-width: 768px) {
-  .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
-}
-
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
     padding: 0;
   }
   .masthead h1 {
-    font-size: 6.5rem;
-    line-height: 6.5rem;
     letter-spacing: 0.8rem;
   }
   .masthead h2 {
@@ -185,6 +180,18 @@
   color: white;
 }
 
+.btn-white {
+  background-color: white;
+}
+
+.btn-white:hover {
+  background-color: #ababab;
+}
+
+.btn-white:focus {
+  background-color: #ababab;
+}
+
 .btn-primary:active {
   background-color: #843d0b !important;
 }
@@ -204,12 +211,23 @@
 
 .projects-section .featured-text {
   padding: 2rem;
+  color: white;
+}
+
+.introduction {
+  position: absolute;
+  bottom: 2em;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
   .projects-section .featured-text {
     padding: 0 0 0 2rem;
     border-left: 0.5rem solid white;
+  }
+
+  .introduction {
+    bottom: 9em;
   }
 }
 
@@ -279,19 +297,16 @@
   text-align: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: white;
   border-radius: 100%;
   line-height: 3rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #e77827;
 }
 
 .contact-section .social a:hover {
-  color: rgba(255, 255, 255, 0.5);
+  color: #d96512bf;
 }
 
-.contact-section .social a:active {
-  color: #fff;
-}
 
 body {
   font-family: 'Roboto';
@@ -364,8 +379,8 @@ footer {
 
   <!-- Header -->
   <header class="masthead">
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
+    <div class="d-flex h-100">
+      <div class="mx-auto text-center introduction">
         <h1 class="mx-auto my-0 text-uppercase">CLOTHES & ACCESSORIES</h1>
         <h2 class="text-white-50 mx-auto mt-2 mb-5">ALL THAT YOUR BOSS NEEDS IS RIGHT HERE</h2>
         <a href="#projects" class="btn btn-primary js-scroll-trigger">Xem thêm</a>
@@ -380,12 +395,12 @@ footer {
       <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="https://drive.google.com/uc?id=1ZTrn8GH2pqQnkbGWXm6q2mEAoqBwAj8Z" alt="">
+          <img class="img-fluid mb-3 mb-lg-0" src="https://drive.google.com/uc?id=1Inkt-41WZp7wrJBmoCU0FchGFNb7frFu" alt="">
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
             <h4>Saigon Pet Wear</h4>
-            <p class="text-black-50 mb-0">We offer designer dog clothes and accessories. Shop our large selection of dog clothes, dog carriers, dog accessories, and dog costumes</p>
+            <p class="mb-0">We offer designer dog clothes and accessories. Shop our large selection of dog clothes, dog carriers, dog accessories, and dog costumes</p>
           </div>
         </div>
       </div>
@@ -399,8 +414,8 @@ footer {
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-left">
-                <h4 class="text-white">Mjmi</h4>
-                <p class="mb-0 text-white-50">Gau gau... gau gau gauuuu gauuu gauuuu.</p>
+                <h4 class="text-white">The Hawaii Shirt</h4>
+                <a class="btn btn-white js-scroll-trigger" href="#signup">GET IT NOW FOR YOUR BOSS</a>
                 <hr class="d-none d-lg-block mb-0 ml-0">
               </div>
             </div>
@@ -411,14 +426,14 @@ footer {
       <!-- Project Two Row -->
       <div class="row justify-content-center no-gutters">
         <div class="col-lg-6">
-          <img class="img-fluid" src="https://drive.google.com/uc?id=1Inkt-41WZp7wrJBmoCU0FchGFNb7frFu" alt="">
+          <img class="img-fluid" src="https://drive.google.com/uc?id=1-q2cLRTDWQwt17mT0xRMnq2oAFRpWGaD" alt="">
         </div>
         <div class="col-lg-6 order-lg-first">
           <div class="bg-black text-center h-100 project">
             <div class="d-flex h-100">
               <div class="project-text w-100 my-auto text-center text-lg-right">
-                <h4 class="text-white">Thuy Mia</h4>
-                <p class="mb-0 text-white-50">Gauuu gauuu gauu gau gau gaugauuuuu...</p>
+                <h4 class="text-white">The Hoodie Sweater</h4>
+                <a class="btn btn-white js-scroll-trigger" href="#signup">GET IT NOW FOR YOUR BOSS</a>
                 <hr class="d-none d-lg-block mb-0 mr-0">
               </div>
             </div>
@@ -455,7 +470,7 @@ footer {
               <i class="fas fa-map-marked-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Địa chỉ</h4>
               <hr class="my-4">
-              <div class="small text-black-50">Thành phố Hồ Chí Minh</div>
+              <div class="small text-black-50">122/21 Phổ Quang, P9, Phú Nhuận, HCM</div>
             </div>
           </div>
         </div>
@@ -467,7 +482,7 @@ footer {
               <h4 class="text-uppercase m-0">Email</h4>
               <hr class="my-4">
               <div class="small text-black-50">
-                <a href="#">saigonpetwear@gmail.com</a>
+                <a href="mailto:saigonpetwear@gmail.com">saigonpetwear@gmail.com</a>
               </div>
             </div>
           </div>
@@ -479,7 +494,7 @@ footer {
               <i class="fas fa-mobile-alt text-primary mb-2"></i>
               <h4 class="text-uppercase m-0">Phone</h4>
               <hr class="my-4">
-              <div class="small text-black-50">+84 (932) 008-991</div>
+              <div class="small text-black-50">+84 932 008 991</div>
             </div>
           </div>
         </div>
@@ -491,9 +506,6 @@ footer {
         </a>
         <a href="#" class="mx-2">
           <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="#" class="mx-2">
-          <i class="fab fa-github"></i>
         </a>
       </div>
 
