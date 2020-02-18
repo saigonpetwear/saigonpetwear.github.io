@@ -143,6 +143,41 @@ body {
   font-size: 1rem;
 }
 
+.masthead .text {
+  position: absolute;
+  width: 21em;
+  top: 6em;
+  left: 1em;
+}
+
+.masthead .logo {
+  position: absolute;
+  width: 7em;
+  top: 12em;
+  left: 1em;
+}
+
+.masthead .text img,
+.masthead .logo img {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .masthead .text {
+    width: 29vw;
+    top: 8em;
+    left: 10%;
+  }
+
+  .masthead .logo {
+    width: 15vw;
+    top: 8em;
+    right: 8%;
+    left: auto;
+  }
+}
+
+
 @media (min-width: 992px) {
   .masthead {
     height: 100vh;
@@ -385,6 +420,8 @@ footer {
         <h2 class="text-white-50 mx-auto mt-2 mb-5">ALL THAT YOUR BOSS NEEDS IS RIGHT HERE</h2>
         <a href="#projects" class="btn btn-primary js-scroll-trigger">Xem thêm</a>
       </div>
+      <div class="text"><img class="img-fluid mb-3 mb-lg-0" src="https://drive.google.com/uc?id=1JCFsQyTavuiMFXC-vDkDJ-yIeg48VX5N" alt=""></div>
+      <div class="logo"><img class="img-fluid mb-3 mb-lg-0" src="https://drive.google.com/uc?id=1eMLOKlK2PfjWQP1RhkUO6vmtuOhdd-V_" alt=""></div>
     </div>
   </header>
 
